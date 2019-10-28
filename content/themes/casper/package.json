@@ -1,0 +1,81 @@
+{
+  "_from": "github:tryghost/Casper#2.1.9",
+  "_id": "casper@2.1.9",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/casper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "casper@github:tryghost/Casper#2.1.9",
+    "name": "casper",
+    "escapedName": "casper",
+    "rawSpec": "github:tryghost/Casper#2.1.9",
+    "saveSpec": "github:tryghost/Casper#2.1.9",
+    "fetchSpec": null,
+    "gitCommittish": "2.1.9"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:tryghost/Casper#67e55abfedb872a55f272e7b4eef4ba1eba3b767",
+  "_spec": "casper@github:tryghost/Casper#2.1.9",
+  "_where": "/Library/WebServer/Documents/apps/bmutinda.com/blog",
+  "author": {
+    "name": "Ghost Foundation",
+    "email": "hello@ghost.org",
+    "url": "https://ghost.org"
+  },
+  "bugs": {
+    "url": "https://github.com/TryGhost/Casper/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "posts_per_page": 25
+  },
+  "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+  "demo": "https://demo.ghost.io",
+  "deprecated": false,
+  "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "cssnano": "3.7.1",
+    "gulp": "3.9.1",
+    "gulp-livereload": "3.8.1",
+    "gulp-nodemon": "2.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-util": "3.0.7",
+    "gulp-watch": "4.3.8",
+    "gulp-zip": "4.0.0",
+    "postcss-color-function": "2.0.1",
+    "postcss-custom-properties": "5.0.1",
+    "postcss-easy-import": "1.0.1"
+  },
+  "engines": {
+    "ghost": ">=1.2.0"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Magazine"
+    ]
+  },
+  "homepage": "https://github.com/TryGhost/Casper#readme",
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "casper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryGhost/Casper.git"
+  },
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "version": "2.1.9"
+}

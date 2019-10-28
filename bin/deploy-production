@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+echo "....Initializing production deployment…"
+echo "pwd →" && pwd
+
+rm config-production.json
+
+node bin/create-config production
+
+echo "config.production.json →"
+cat "config.production.json"
+
+bin/wait-for-db
+
+./node_modules/knex-migrator/bin/knex-migrator init --mgpath node_modules/ghost
+
+npm start --production

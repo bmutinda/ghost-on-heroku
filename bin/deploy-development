@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+echo "....Initializing development deployment…"
+echo "pwd →" && pwd
+
+rm config-development.json
+
+node bin/create-config development
+
+echo "config.development.json →"
+cat "config.development.json"
+
+bin/wait-for-db
+
+./node_modules/knex-migrator/bin/knex-migrator init --mgpath node_modules/ghost
+
+npm start

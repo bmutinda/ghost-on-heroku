@@ -1,0 +1,25 @@
+{
+  "name": "bmutinda-ghost-on-heroku",
+  "description": "Run ghost blog on heroku",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bmutinda/ghost-on-heroku.git"
+  },
+  "license": "ICS",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "casper": "github:tryghost/Casper#2.1.9",
+    "dotenv": "^8.0.0",
+    "ghost": "1.25.6",
+    "ghost-storage-adapter-s3": "^2.3.0",
+    "knex-migrator": "^3.3.2",
+    "mysql": "^2.14.1"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

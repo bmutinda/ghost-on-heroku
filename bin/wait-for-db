@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+require("dotenv").config();
+
+var mysql      = require('mysql');
+console.error(`Awaiting MySQL database…`);
+pingDatabaseUntilConnected();
+
+function pingDatabaseUntilConnected() {
+  var connection = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT,
+    database: process.env.DB_DATABASE
+  });
+  connection.query('SELECT 1', function (error, results, fields) {
+    if (error) {
+      console.error(`Database not yet available: ${error.message}`);
+      setTimeout(pingDatabaseUntilConnected, 5000);
+    } else {
+      console.error('Database connected.');
+      connection.end();
+      process.exit(0);
+    }
+  });
+}
